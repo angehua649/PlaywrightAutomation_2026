@@ -29,6 +29,6 @@ for (let i = 0; i < cars.length; i++) {
     console.log(results);
     let resultArray = results?.split(" ");
     console.log("Search number for " + cars[i] + " is : " + resultArray?.[1]);  
-}// end of for loop
+}// end of for loop// for testing new commit
 
 });// end of test
