@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
+    "pw": "npx -y node@22 ./node_modules/@playwright/test/lib/cli.js",
     "bingTest": "npx playwright test src/test/Day1_061626/T1_BingSearch.spec.ts --headed --workers=1 --project=firefox --project=chrome --reporter=html",
     "bingTestHeadless": "npx playwright test src/test/Day_061626/T1_BingSearch.spec.ts  --workers=1 --project=chrome --reporter=html",
     "capitalOne360AccOpenEnterNameTest": "npx playwright test src/test/Day1_061626/Automation_AI05.spec.ts --headed --workers=1 --project=firefox --project=chrome --reporter=html",
@@ -12,7 +12,9 @@
     "uspsMouseHoverTestHeadless": "npx playwright test src/test/Day2_062226/T1_USPS_MouseHover.spec.ts  --workers=1 --project=firefox --project=chrome --reporter=html",
     "bingLoop": "npx playwright test src/test/Day2_062226/T2_BingSearch_Loop.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "parallelTest": "npx playwright test src/test/Day2_062226/.* --workers=2 --headed --project=chrome --reporter=html",
-    "parallelTestHeadless": "npx playwright test src/test/Day2_062226/.* --workers=2  --project=chrome --reporter=html"
+    "parallelTestHeadless": "npx playwright test src/test/Day2_062226/.* --workers=2  --project=chrome --reporter=html",
+    "bingReusableTest": "npm run pw -- test src/test/Day3_072926/BingSearch_ResuableConcept.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "report": "npx playwright show-report"
 
   },
   "keywords": [],
